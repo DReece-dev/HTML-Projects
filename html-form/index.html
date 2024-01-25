@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML - Registration Form</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fafafa;
+            margin: 0;
+            padding: 0;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 20px;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        div {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333333;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #3498db;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #2980b9;
+        }
+
+        @media screen and (max-width: 600px) {
+            form {
+                margin: 20px auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <div>
+            <label for="full-name">Full Name:</label>
+            <input type="text" id="full-name" name="full-name">
+        </div>
+
+        <div>
+            <label for="user-email">Email Address:</label>
+            <input type="email" id="user-email" name="user-email">
+        </div>
+
+        <div>
+            <label>Your Gender:</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+        </div>
+
+        <div>
+            <label for="user-age">Age:</label>
+            <input type="number" id="user-age" name="user-age">
+        </div>
+
+        <div>
+            <label>Interests:</label><br>
+            <input type="checkbox" id="sports" name="hobbies" value="sports">
+            <label for="sports"> Sports</label><br>
+            <input type="checkbox" id="movies" name="hobbies" value="movies">
+            <label for="movies"> Movies</label><br>
+            <input type="checkbox" id="reading" name="hobbies" value="reading">
+            <label for="reading"> Reading</label>
+        </div>
+
+        <div>
+            <input type="submit" value="Submit Form">
+        </div>
+    </form>
+
+
+</body>
+
+</html>
